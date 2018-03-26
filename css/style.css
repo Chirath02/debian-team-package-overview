@@ -9,4 +9,42 @@
 
 .card {
     margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card-footer {
+    padding: 0.5rem;
+}
+
+.package-panel {
+    padding: 0 1.25em;
+}
+
+.fa-bar-chart {
+    margin-left: 10px;
+}
+
+.old-stable {
+    color: #424242;
+    margin-right: 5px;
+}
+
+.stable {
+    color: green;
+    margin-right: 5px;
+}
+
+.testing {
+    color: #2222aa;
+    margin-right: 5px;
+}
+
+.unstable {
+    color: #b400ff;
+}
+
+.package-card {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
