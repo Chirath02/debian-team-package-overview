@@ -55,11 +55,12 @@
         </div>
         <div class="card">
             <h5 class="card-header debian-color">Ready for upload(3) <i
-                    class="fa fa-chevron-up fa-pull-right"
-                    aria-hidden="true" data-toggle="collapse"
+                    class="fa fa-chevron-up fa-pull-right cursor-pointer"
+                    aria-hidden="true" data-toggle="collapse" id="ready-to-upload-arrow"
                     data-target="#ready-to-upload-table"></i></h5>
-            <div id="ready-to-upload-table" class="row card-body package-panel table-responsive">
-                <table class="table table-hover">
+            <div class="row card-body package-panel">
+                <div id="ready-to-upload-table" class="table-responsive collapse show">
+                    <table class="table table-hover">
                     <thead>
                     <tr>
                         <th scope="col">Package</th>
@@ -79,7 +80,6 @@
                                title="Description"
                                data-content='Encrypted cookie-based session backend for Dancer'>libdancer-session-cookie-perl</a>
                             <span title="Component">(main)</span>
-
                         </th>
                         <td><a href="">0.001-1 (0.001-1~bpo8+1)</a></td>
                         <td>
@@ -114,9 +114,6 @@
                         <td>
                             <span class="badge badge-warning">All - 15</span>
                             <span class="badge badge-secondary">RC - 0</span>
-                            <i class="fa fa-chevron-down cursor-pointer fa-pull-right"
-                                aria-hidden="true" data-toggle="collapse"
-                                data-target="#data1"></i>
                         </td>
                     </tr>
 
@@ -198,6 +195,7 @@
                     </tr>
                     </tbody>
                 </table>
+                </div>
 
             </div>
 

@@ -18,3 +18,18 @@ $("#description").popover({
             }
         }, 300);
 });
+
+
+$('#ready-to-upload-table').on('hide.bs.collapse', function () {
+  var icon = document.getElementById('ready-to-upload-arrow');
+  icon.classList.remove('fa-chevron-up');
+  icon.classList.add('fa-chevron-down');
+});
+
+
+$('#ready-to-upload-table').on('show.bs.collapse', function () {
+  var icon = document.getElementById('ready-to-upload-arrow');
+  icon.classList.remove('fa-chevron-down');
+  icon.classList.add('fa-chevron-up');
+});
+
