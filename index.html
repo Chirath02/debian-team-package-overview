@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Team overview - Distro Tracker</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
-
 </head>
 <body>
 
@@ -37,24 +36,183 @@
 </header>
 
 <section class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-            <h2>Package overview page mockups</h2>
+    <div>
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Debian Perl Group</h1>
+            </div>
+            <div class="col-md-3">
+                <div class="pull-right text-center">
+                    <a href="index.html" class="text-muted">Simple</a> |
+                    <a href="advance.html">Advanced</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <input type="text" class="form-control"
+                       id="inlineFormInputName2" placeholder="Package Name">
+            </div>
+
         </div>
-        <div class="col-md-12">
-            <ul>
-                <li>
-                    <a href="cards.html"><h5>Card style</h5></a>
-                </li>
-                <li>
-                    <a href="tables.html"><h5>Table style</h5></a>
-                </li>
-            </ul>
+        <div class="card">
+            <h5 class="card-header debian-color">Ready for upload(3) <i
+                    class="fa fa-chevron-up fa-pull-right"
+                    aria-hidden="true" data-toggle="collapse"
+                    data-target="#ready-to-upload-table"></i></h5>
+            <div id="ready-to-upload-table" class="row card-body package-panel">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Package</th>
+                        <th scope="col">Repository</th>
+                        <th scope="col">Lintian check</th>
+                        <th scope="col">Archive</th>
+                        <th scope="col">Upstream</th>
+                        <th scope="col">Versions</th>
+                        <th scope="col">Bugs</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr data-toggle="collapse" data-target="#collapseExample">
+                        <th scope="row">
+                            <a href="https://tracker.debian.org/pkg/libdancer-session-cookie-perl"
+                               id="description" data-toggle="popover"
+                               title="Description"
+                               data-content='Encrypted cookie-based session backend for Dancer'>libdancer-session-cookie-perl</a>
+                            <span title="Component">(main)</span>
+
+                        </th>
+                        <td><a href="">0.001-1 (0.001-1~bpo8+1)</a></td>
+                        <td>
+                            <a href="">
+                                <span class="badge badge-danger" title="Errors">E: 4</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-warning"
+                                      title="Warnings">W: 2</span>
+                            </a>
+                        </td>
+                        <td><a href="">0.001-1</a></td>
+                        <td><a href=""> 0.001 (Browse)</a></td>
+                        <td>
+                            <a href="">
+                                <span class="badge badge-secondary"
+                                      title="Old stable">os</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-success"
+                                      title="Stable">s</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-primary"
+                                      title="Testing">t</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-warning"
+                                      title="Unstable">us</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span class="badge badge-warning">All - 15</span>
+                            <span class="badge badge-secondary">RC - 0</span>
+                            <i class="fa fa-chevron-down cursor-pointer fa-pull-right"
+                                aria-hidden="true" data-toggle="collapse"
+                                data-target="#data1"></i>
+                        </td>
+                    </tr>
+
+                    <tr class="collapse" id="data1">
+
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">libnet-ldap-sid-perl(non-free)</th>
+                        <td><a href="">0.27-1 (0.29-1)</a></td>
+                        <td>
+                            <a href="">
+                                <span class="badge badge-secondary"
+                                      title="Errors">E: 0</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-secondary"
+                                      title="Warnings">W: 0</span>
+                            </a>
+                        </td>
+                        <td><a href="">0.30-2</a></td>
+                        <td><a href=""> 0.30 (Browse)</a></td>
+                        <td>
+                            <a href="">
+                                <span class="badge badge-secondary"
+                                      title="Old stable">os</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-success"
+                                      title="Stable">s</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-warning"
+                                      title="Unstable">us</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span class="badge badge-primary">All - 12</span>
+                            <span class="badge badge-danger">Imp - 10</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">libdancer-session-cookie-perl(main)</th>
+                        <td><a href="">0.27-1 (0.29-1)</a></td>
+                        <td>
+                            <a href="">
+                                <span class="badge badge-danger" title="Errors">E: 3</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-warning"
+                                      title="Warnings">W: 1</span>
+                            </a>
+                        </td>
+                        <td><a href="">0.30-2</a></td>
+                        <td><a href=""> 0.30 (Browse)</a></td>
+                        <td>
+                            <a href="">
+                                <span class="badge badge-success"
+                                      title="Stable">s</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-primary"
+                                      title="Testing">t</span>
+                            </a>
+                            <a href="">
+                                <span class="badge badge-warning"
+                                      title="Unstable">us</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span class="badge badge-primary">All - 2</span>
+                            <span class="badge badge-secondary">RC - 0</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="card">
+                <h5 class="card-header debian-color">Packages with RC
+                    bugs(22) <i class="fa fa-chevron-down fa-pull-right"
+                                aria-hidden="true"></i></h5>
+
+            </div>
         </div>
-    </div>
 </section>
 
-
+<script data-require="jquery@*" data-semver="2.1.1"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
