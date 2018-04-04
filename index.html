@@ -52,172 +52,107 @@
                 <input type="text" class="form-control"
                        id="inlineFormInputName2" placeholder="Package Name">
             </div>
-
         </div>
-        <div class="card">
-            <h5 class="card-header debian-color">Ready for upload(3) <i
-                    class="toggle fa fa-chevron-up fa-pull-right cursor-pointer"
-                    aria-hidden="true" data-toggle="collapse"
-                    id="ready-to-upload-arrow"
-                    data-target="#ready-to-upload-table"></i></h5>
-            <div class="row card-body package-panel">
-                <div id="ready-to-upload-table"
-                     class="table-responsive collapse show">
-                    <table class="table table-hover">
-                        <thead>
-                        <tr>
-                            <th scope="col">Package</th>
-                            <th scope="col">Repository</th>
-                            <th scope="col">Lintian check</th>
-                            <th scope="col">Archive</th>
-                            <th scope="col">Upstream</th>
-                            <th scope="col">Versions</th>
-                            <th scope="col">Bugs</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr data-toggle="collapse"
-                            data-target="#collapseExample">
-                            <th scope="row">
-                                <a href="https://tracker.debian.org/pkg/libdancer-session-cookie-perl"
-                                   id="description" data-toggle="popover"
-                                   title="Description"
-                                   data-content='Encrypted cookie-based session backend for Dancer'>libdancer-session-cookie-perl</a>
-                                <span title="Component">(main)</span>
-                            </th>
-                            <td><a href="">0.001-1 (0.001-1~bpo8+1)</a></td>
-                            <td>
-                                <a href="">
-                                    <span class="badge badge-danger"
-                                          title="Errors">E: 4</span>
-                                </a>
-                                <a href="">
-                                <span class="badge badge-warning"
-                                      title="Warnings">W: 2</span>
-                                </a>
-                            </td>
-                            <td><a href="">0.001-1</a></td>
-                            <td><a href=""> 0.001 (Browse)</a></td>
-                            <td>
-                                <a href="">
+
+        <table class="table table-hover">
+            <thead>
+            <tr class="debian-color">
+                <th scope="col">Package</th>
+                <th scope="col">Repository</th>
+                <th scope="col">Archive</th>
+                <th scope="col">Upstream</th>
+                <th scope="col">Versions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">
+                    <a href="https://tracker.debian.org/pkg/libdancer-session-cookie-perl"
+                       id="description" data-toggle="popover" class="popover-hover"
+                       data-placement="top"
+                       title="Description"
+                       data-content='Encrypted cookie-based session backend for Dancer'>libdancer-session-cookie-perl</a>
+                    <span title="Component">(main)</span>
+                </th>
+                <td><a href="">0.001-1 (0.001-1~bpo8+1)</a></td>
+
+                <td><a href="">0.001-1</a></td>
+                <td><a href=""> 0.001 (Browse)</a></td>
+                <td>
+                    <a href="">
+                                <span class="badge badge-secondary popover-hover"
+                                      data-toggle="popover"
+                                      data-content=''
+                                      data-placement="left"
+                                      title="Jessie">Old stable</span>
+                    </a>
+                    <a href="">
+                                <span class="badge badge-success popover-hover"
+                                      data-toggle="popover"
+                                      data-content=''
+                                      data-placement="top"
+                                      title="Stretch">Stable</span>
+                    </a>
+                    <a href="">
+                                <span class="badge badge-primary popover-hover"
+                                      data-placement="bottom"
+                                      title="Testing">Testing</span>
+                    </a>
+                    <a href="">
+                                <span class="badge badge-warning popover-hover"
+                                      data-placement="right"
+                                      title="Unstable">Unstable</span>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">libnet-ldap-sid-perl(non-free)</th>
+                <td><a href="">0.27-1 (0.29-1)</a></td>
+
+                <td><a href="">0.30-2</a></td>
+                <td><a href=""> 0.30 (Browse)</a></td>
+                <td>
+                    <a href="">
                                 <span class="badge badge-secondary"
-                                      title="Old stable">os</span>
-                                </a>
-                                <a href="">
+                                      title="Old stable">Old stable</span>
+                    </a>
+                    <a href="">
                                 <span class="badge badge-success"
-                                      title="Stable">s</span>
-                                </a>
-                                <a href="">
+                                      title="Stable">Stable</span>
+                    </a>
+                    <a href="">
+                                <span class="badge badge-warning"
+                                      title="Unstable">Unstable</span>
+                    </a>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">
+                    libdancer-session-cookie-perl(main)
+                </th>
+                <td><a href="">0.27-1 (0.29-1)</a></td>
+                <td><a href="">0.30-2</a></td>
+                <td><a href=""> 0.30 (Browse)</a></td>
+                <td>
+                    <a href="">
+                                <span class="badge badge-success"
+                                      title="Stable">Stable</span>
+                    </a>
+                    <a href="">
                                 <span class="badge badge-primary"
-                                      title="Testing">t</span>
-                                </a>
-                                <a href="">
+                                      title="Testing">Testing</span>
+                    </a>
+                    <a href="">
                                 <span class="badge badge-warning"
-                                      title="Unstable">us</span>
-                                </a>
-                            </td>
-                            <td>
-                                <span class="badge badge-warning">All - 15</span>
-                                <span class="badge badge-secondary">RC - 0</span>
-                                <i class="toggle fa fa-chevron-down fa-pull-right cursor-pointer"
-                                   aria-hidden="true"
-                                   data-toggle="collapse"
-                                   data-target="#data1"></i>
-                            </td>
-                        </tr>
+                                      title="Unstable">Unstable</span>
+                    </a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
 
-                        <tr class="collapse" id="data1">
-
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">libnet-ldap-sid-perl(non-free)</th>
-                            <td><a href="">0.27-1 (0.29-1)</a></td>
-                            <td>
-                                <a href="">
-                                <span class="badge badge-secondary"
-                                      title="Errors">E: 0</span>
-                                </a>
-                                <a href="">
-                                <span class="badge badge-secondary"
-                                      title="Warnings">W: 0</span>
-                                </a>
-                            </td>
-                            <td><a href="">0.30-2</a></td>
-                            <td><a href=""> 0.30 (Browse)</a></td>
-                            <td>
-                                <a href="">
-                                <span class="badge badge-secondary"
-                                      title="Old stable">os</span>
-                                </a>
-                                <a href="">
-                                <span class="badge badge-success"
-                                      title="Stable">s</span>
-                                </a>
-                                <a href="">
-                                <span class="badge badge-warning"
-                                      title="Unstable">us</span>
-                                </a>
-                            </td>
-                            <td>
-                                <span class="badge badge-primary">All - 12</span>
-                                <span class="badge badge-danger">Imp - 10</span>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">
-                                libdancer-session-cookie-perl(main)
-                            </th>
-                            <td><a href="">0.27-1 (0.29-1)</a></td>
-                            <td>
-                                <a href="">
-                                    <span class="badge badge-danger"
-                                          title="Errors">E: 3</span>
-                                </a>
-                                <a href="">
-                                <span class="badge badge-warning"
-                                      title="Warnings">W: 1</span>
-                                </a>
-                            </td>
-                            <td><a href="">0.30-2</a></td>
-                            <td><a href=""> 0.30 (Browse)</a></td>
-                            <td>
-                                <a href="">
-                                <span class="badge badge-success"
-                                      title="Stable">s</span>
-                                </a>
-                                <a href="">
-                                <span class="badge badge-primary"
-                                      title="Testing">t</span>
-                                </a>
-                                <a href="">
-                                <span class="badge badge-warning"
-                                      title="Unstable">us</span>
-                                </a>
-                            </td>
-                            <td>
-                                <span class="badge badge-primary">All - 2</span>
-                                <span class="badge badge-secondary">RC - 0</span>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
-
-            <div class="card">
-                <h5 class="card-header debian-color">Packages with RC
-                    bugs(22) <i class="fa fa-chevron-down fa-pull-right"
-                                aria-hidden="true"></i></h5>
-
-            </div>
-        </div>
 </section>
 
 <script data-require="jquery@*" data-semver="2.1.1"

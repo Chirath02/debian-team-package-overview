@@ -1,4 +1,4 @@
-$("#description").popover({
+$(".popover-hover").popover({
     trigger: "manual",
     html: true,
     animation: true
