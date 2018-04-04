@@ -14,8 +14,9 @@ $(".popover-hover").popover({
         if (!$(".popover:hover").length) {
             $(_this).popover("hide");
         }
-    }, 300);
+    }, 100);
 });
+
 
 
 $('.toggle').on('click', function (e) {

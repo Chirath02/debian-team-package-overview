@@ -56,3 +56,7 @@ td, th {
 .cursor-pointer:hover {
     cursor:pointer
 }
+
+.popover {
+    margin-bottom: 5px;
+}
