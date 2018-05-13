@@ -3,6 +3,8 @@
 Mockup designs for Debian Distro tracker ``team overview page``. 
 This was made as part of my GSoC proposal for Debian.
 
+[Demo](https://chirath02.github.io/debian-team-package-overview/)
+
 ### Screenshots
 
 ![Image 1](img/1.png)
